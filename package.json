@@ -1,0 +1,14 @@
+{
+  "name": "googlekeepclonev2",
+  "version": "1.0.0",
+  "description": "google keep clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Micu Ioan Eduard",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}

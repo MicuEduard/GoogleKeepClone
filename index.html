@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Keep Clone | Micu Ioan Eduard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="top-bar">
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="logo">
+            <h3>Keep</h3>
+        </div>
+
+        <div class="search-bar">
+            <input autocomplete="off" type="text" placeholder="Search" onkeyup="search()" id="search">
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <div class="left">
+            <ul>
+                <li><i class="far fa-lightbulb"></i><p>Notes</p></li>
+                <li><i class="far fa-bell"></i><p>Reminders</p></li>
+                <li><i class="fas fa-pencil-alt"></i><p>Edit labels</p></li>
+                <li><i class="far fa-folder-open"></i><p>Archive</p></li>
+                <li><i class="far fa-trash-alt"></i><p>Trash</p></li>
+            </ul>
+        </div>
+
+        <div class="right">
+
+            <div class="center  height-30" id="center">
+
+                <div class="center-wrap" id="center-wrap">
+
+                    <div class="header display-none" id="header">
+                        <img src="" alt="" id="img">
+                        
+                    </div>
+
+                    <div class="middle-wrap" id="middle-wrap">
+
+                        <div class="wrapper" id="enable">
+
+                            <form id="form">
+
+                                <div class="input-area">
+                                    <input autocomplete="off" type="text" placeholder="Title" id="title">
+                                    <textarea class="display-none" name="note-content" id="textarea" cols="30" rows="1" placeholder="Take a note..."></textarea>
+                                </div>
+
+                                <div class="more-actions" id="more-actions">
+                                    <ul class="display-none" id="note-actions">
+                                        <li class="note-actions-item" id="note-actions-item-1"><i class="far fa-bell" name="action-icon" id="note-actions-item-bell" data-setRemind="false"></i></li>
+                                        <li class="note-actions-item submenu" id="note-actions-item-2"><i class="fas fa-palette" name="action-icon" id="note-actions-item-palette"></i>
+                                            <ul>
+                                                <li class="color white" data-color="white" id="color"></li>
+                                                <li class="color red" data-color="red" id="color"></li>
+                                                <li class="color orange" data-color="orange" id="color"></li>
+                                                <li class="color yellow" data-color="yellow" id="color"></li>
+                                                <li class="color green" data-color="green" id="color"></li>
+                                                <li class="color teal" data-color="teal" id="color"></li>
+                                                <li class="color blue" data-color="blue" id="color"></li>
+                                                <li class="color dark-blue" data-color="dark-blue" id="color"></li>
+                                                <li class="color purple" data-color="purple" id="color"></li>
+                                                <li class="color pink" data-color="pink" id="color"></li>
+                                                <li class="color brown" data-color="brown" id="color"></li>
+                                                <li class="color gray" data-color="gray" id="color"></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="note-actions-item" id="note-actions-item-3">
+                                            <label for="upload" id="label"><i class="far fa-image" name="action-icon-image" id="note-actions-item-image"></i></label>
+                                            <input type="file" name="upload" id="upload" class="display-none">
+                                        </li>
+                                        <li class="note-actions-item" id="note-actions-item-4"><i class="far fa-folder-open" name="action-icon-folder" id="note-actions-item-folder" data-isArchived="false"></i></li>
+                                    </ul>
+                                    <button class="display-none" id="button">Close</button>
+                                </div>
+                
+                            </form>
+
+                        </div>
+
+                        <i class="fas fa-thumbtack display-none" id="pin-icon" name="action-icon"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="all-notes" id="all-notes">
+
+                <div class="pinned" id="pinned">
+                    <p class="pin-text">PINNED</p>
+
+
+                </div>
+
+                <div class="others" id="others">
+                    <p class="others-text">OTHERS</p>
+
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="overlay display-none" id="overlay"></div>
+
+    <div class="edit-note display-none" id="edit-note">
+        <div class="edit-note-top" id="edit-note-top">
+            <form id="edit-form">
+                <input autocomplete="off" type="text" id="edit-note-title" class="edit-note-title">
+                <textarea name="text-edit" id="edit-note-text" cols="30" rows="1"></textarea>
+            </form>
+            <i class="fas fa-thumbtack" id="edit-pin-icon"></i>
+        </div>
+        <div class="edit-note-when" id="edit-note-when">
+            <p id="when">Edit </p>
+        </div>
+        <div class="edit-note-bottom" id="edit-note-bottom">
+            <ul id="edit-note-actions">
+                <li id="edit-item-1"><i class="far fa-bell" id="note-actions-item-bell"></i></li>
+                <li class="submenu" id="edit-item-2"><i class="fas fa-palette"id="note-actions-item-palette"></i>
+                    <ul>
+                        <li class="color white" data-color="white" id="color"></li>
+                        <li class="color red" data-color="red" id="color"></li>
+                        <li class="color orange" data-color="orange" id="color"></li>
+                        <li class="color yellow" data-color="yellow" id="color"></li>
+                        <li class="color green" data-color="green" id="color"></li>
+                        <li class="color teal" data-color="teal" id="color"></li>
+                        <li class="color blue" data-color="blue" id="color"></li>
+                        <li class="color dark-blue" data-color="dark-blue" id="color"></li>
+                        <li class="color purple" data-color="purple" id="color"></li>
+                        <li class="color pink" data-color="pink" id="color"></li>
+                        <li class="color brown" data-color="brown" id="color"></li>
+                        <li class="color gray" data-color="gray" id="color"></li>
+                        
+                    </ul>
+                </li>
+                <li id="edit-item-3"><i class="far fa-image"id="note-actions-item-image"></i></li>
+                <li id="edit-item-4"><i class="far fa-folder-open"id="note-actions-item-open"></i></li>
+            </ul>
+            <button id="edit-btn-close">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

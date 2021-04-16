@@ -1,0 +1,719 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #404040;
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* === TOP === */
+.top-bar {
+  width: 100%;
+  height: 7vh;
+  border-bottom: 1px solid #a5a5a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-bar div {
+  margin-left: 25px;
+}
+
+.top-bar .menu-icon .fas {
+  font-size: 17.5px;
+}
+
+.top-bar .logo h3 {
+  font-size: 20px;
+}
+
+.top-bar .search-bar {
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 1px solid #a5a5a5;
+  margin-left: 100px;
+}
+
+.top-bar .search-bar input {
+  margin-left: 20px;
+  width: 95%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+
+.top-bar .search-bar:hover {
+  -webkit-box-shadow: -1px 5px 9px -4px #000000;
+          box-shadow: -1px 5px 9px -4px #000000;
+  cursor: pointer;
+}
+
+/* === MAIN LEFT === */
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .left {
+  width: 20%;
+}
+
+.main .left ul {
+  list-style-type: none;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.main .left ul li {
+  margin-top: 25px;
+}
+
+.main .left ul li p {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.main .right {
+  width: 80%;
+  height: 10%;
+}
+
+.main .right .center {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .right .center .center-wrap {
+  margin-top: 25px;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 0.5px solid #a5a5a5;
+  -webkit-box-shadow: -1px 5px 9px -4px #000000;
+          box-shadow: -1px 5px 9px -4px #000000;
+  border-radius: 10px;
+  position: relative;
+}
+
+.main .right .center .center-wrap .fas {
+  margin-top: 25px;
+}
+
+.main .right .center .center-wrap .header {
+  width: 100%;
+  background-size: cover;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.main .right .center .center-wrap .header img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.main .right .center .center-wrap .middle-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .input-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .input-area input {
+  border: none;
+  height: 70px;
+  outline: none;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .input-area textarea {
+  border: none;
+  height: 50px;
+  outline: none;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul li {
+  display: inline-block;
+  margin: 0px 15px;
+  margin-bottom: 15px;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul {
+  width: 120px;
+  display: none;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: all 3ms;
+  transition: all 3ms;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul li {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .white {
+  background-color: white;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .red {
+  background-color: #ff6464;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .orange {
+  background-color: #ffff64;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .yellow {
+  background-color: #ffff64;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .green {
+  background-color: #64e464;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .teal {
+  background-color: #64e4e4;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .blue {
+  background-color: #6464ff;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .dark-blue {
+  background-color: #00009b;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .purple {
+  background-color: #e464e4;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .pink {
+  background-color: #ffcad5;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .brown {
+  background-color: #ff8e8e;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu ul .gray {
+  background-color: #e4e4e4;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu:hover ul {
+  display: block;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions ul .submenu:hover ul li:hover {
+  border: 1px solid #000;
+}
+
+.main .right .center .center-wrap .middle-wrap .wrapper form .more-actions button {
+  border: none;
+  font-size: 15px;
+}
+
+/* === NOTE STYLE === */
+.others, .pinned {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.others .note, .pinned .note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 25%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 1px solid #a5a5a5;
+  border-radius: 5px;
+  margin: 25px;
+}
+
+.others .note .note-header, .pinned .note .note-header {
+  height: 150px;
+  width: 100%;
+}
+
+.others .note .note-header img, .pinned .note .note-header img {
+  height: 100%;
+  width: 100%;
+}
+
+.others .note .note-top, .pinned .note .note-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.others .note .note-top .note-main, .pinned .note .note-top .note-main {
+  width: 80%;
+  margin-left: 25px;
+}
+
+.others .note .note-top .fas, .pinned .note .note-top .fas {
+  margin-right: 25px;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.others .note .note-bottom, .pinned .note .note-bottom {
+  margin-bottom: 25px;
+  opacity: 0;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.others .note .note-bottom ul, .pinned .note .note-bottom ul {
+  list-style-type: none;
+  margin-top: 25px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.others .note .note-bottom ul .submenu ul, .pinned .note .note-bottom ul .submenu ul {
+  width: 100px;
+  display: none;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: all 3ms;
+  transition: all 3ms;
+  top: -5px;
+}
+
+.others .note .note-bottom ul .submenu ul li, .pinned .note .note-bottom ul .submenu ul li {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+  display: inline-block;
+}
+
+.others .note .note-bottom ul .submenu ul li:hover, .pinned .note .note-bottom ul .submenu ul li:hover {
+  border: 1px solid #000;
+}
+
+.others .note .note-bottom ul .submenu ul .white, .pinned .note .note-bottom ul .submenu ul .white {
+  background-color: white;
+}
+
+.others .note .note-bottom ul .submenu ul .red, .pinned .note .note-bottom ul .submenu ul .red {
+  background-color: #ff6464;
+}
+
+.others .note .note-bottom ul .submenu ul .orange, .pinned .note .note-bottom ul .submenu ul .orange {
+  background-color: #ffff64;
+}
+
+.others .note .note-bottom ul .submenu ul .yellow, .pinned .note .note-bottom ul .submenu ul .yellow {
+  background-color: #ffff64;
+}
+
+.others .note .note-bottom ul .submenu ul .green, .pinned .note .note-bottom ul .submenu ul .green {
+  background-color: #64e464;
+}
+
+.others .note .note-bottom ul .submenu ul .teal, .pinned .note .note-bottom ul .submenu ul .teal {
+  background-color: #64e4e4;
+}
+
+.others .note .note-bottom ul .submenu ul .blue, .pinned .note .note-bottom ul .submenu ul .blue {
+  background-color: #6464ff;
+}
+
+.others .note .note-bottom ul .submenu ul .dark-blue, .pinned .note .note-bottom ul .submenu ul .dark-blue {
+  background-color: #00009b;
+}
+
+.others .note .note-bottom ul .submenu ul .purple, .pinned .note .note-bottom ul .submenu ul .purple {
+  background-color: #e464e4;
+}
+
+.others .note .note-bottom ul .submenu ul .pink, .pinned .note .note-bottom ul .submenu ul .pink {
+  background-color: #ffcad5;
+}
+
+.others .note .note-bottom ul .submenu ul .brown, .pinned .note .note-bottom ul .submenu ul .brown {
+  background-color: #ff8e8e;
+}
+
+.others .note .note-bottom ul .submenu ul .gray, .pinned .note .note-bottom ul .submenu ul .gray {
+  background-color: #e4e4e4;
+}
+
+.others .note .note-bottom ul .submenu:hover ul, .pinned .note .note-bottom ul .submenu:hover ul {
+  display: block;
+}
+
+.others .note:hover .note-bottom, .pinned .note:hover .note-bottom {
+  opacity: 1;
+}
+
+.others .note:hover .fas, .pinned .note:hover .fas {
+  opacity: 1;
+}
+
+/* === EDIT NOTE === */
+.overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
+.edit-note {
+  width: 40%;
+  height: 20%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  z-index: 101;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+}
+
+.edit-note .edit-note-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.edit-note .edit-note-top form {
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 80%;
+}
+
+.edit-note .edit-note-top form input {
+  font-size: 30px;
+}
+
+.edit-note .edit-note-top form input, .edit-note .edit-note-top form textarea {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.edit-note .edit-note-top .fa-thumbtack {
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.edit-note .edit-note-when {
+  width: 100%;
+  text-align: right;
+  font-weight: 300;
+}
+
+.edit-note .edit-note-when p {
+  margin-right: 25px;
+}
+
+.edit-note .edit-note-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.edit-note .edit-note-bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 50%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 25px;
+}
+
+.edit-note .edit-note-bottom ul .submenu {
+  position: relative;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul {
+  width: 100px;
+  display: none;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: all 3ms;
+  transition: all 3ms;
+  top: -2px;
+  left: -20px;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+  display: inline-block;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .white {
+  background-color: white;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .red {
+  background-color: #ff6464;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .orange {
+  background-color: #ffff64;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .yellow {
+  background-color: #ffff64;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .green {
+  background-color: #64e464;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .teal {
+  background-color: #64e4e4;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .blue {
+  background-color: #6464ff;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .dark-blue {
+  background-color: #00009b;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .purple {
+  background-color: #e464e4;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .pink {
+  background-color: #ffcad5;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .brown {
+  background-color: #ff8e8e;
+}
+
+.edit-note .edit-note-bottom ul .submenu ul .gray {
+  background-color: #e4e4e4;
+}
+
+.edit-note .edit-note-bottom ul .submenu:hover ul {
+  display: block;
+}
+
+.edit-note .edit-note-bottom ul .submenu:hover ul li:hover {
+  border: 1px solid #000;
+}
+
+.edit-note .edit-note-bottom button {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  margin-right: 25px;
+}
+
+/* === AUX === */
+.display-none {
+  display: none;
+}
+
+.height-30 {
+  height: 30%;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+  background-color: #ff6464;
+}
+
+.orange {
+  background-color: #ffff64;
+}
+
+.yellow {
+  background-color: #ffff64;
+}
+
+.green {
+  background-color: #64e464;
+}
+
+.teal {
+  background-color: #64e4e4;
+}
+
+.blue {
+  background-color: #6464ff;
+}
+
+.dark-blue {
+  background-color: #00009b;
+}
+
+.purple {
+  background-color: #e464e4;
+}
+
+.pink {
+  background-color: #ffcad5;
+}
+
+.brown {
+  background-color: #ff8e8e;
+}
+
+.gray {
+  background-color: #e4e4e4;
+}
+/*# sourceMappingURL=main.css.map */
